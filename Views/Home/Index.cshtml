@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <p>
+        Logged in as: <strong>@User.Identity?.Name</strong>
+    </p>
+
+    <a asp-controller="Auth" asp-action="Logout" class="btn btn-danger">
+        Logout
+    </a>
+</div>
