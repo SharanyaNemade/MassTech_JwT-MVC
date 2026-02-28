@@ -1,0 +1,14 @@
+@model JwT_Core_MVC.Models.LoginModel;
+
+<h2>LogIn</h2>
+
+<form method="post">
+    <input asp-for="Username" placeholder="Username" />
+    <input asp-for="Password" type="password" placeholder="Password" />
+    <button type="submit">Login</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
